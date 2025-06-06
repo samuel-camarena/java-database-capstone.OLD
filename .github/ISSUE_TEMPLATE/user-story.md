@@ -7,12 +7,17 @@ assignees: samuel-camarena
 
 ---
 
-_As a [user role], I want [feature/goal], so that [reason]._
+**As a** [user role],
+**I need** [feature/goal],
+**so that** [reason].
 
 **Acceptance Criteria:**
-1. [Criteria 1]
-2. [Criteria 2]
-3. [Criteria 3]
+
+ ```gherkin
+ Given [some context]
+ When [certain action is taken]
+ Then [the outcome of action is observed]
+ ```
 
 **Priority:** [High/Medium/Low]
 **Story Points:** [Estimated Effort in Points]
