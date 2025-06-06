@@ -25,9 +25,7 @@
 - user_name: VARCHAR(50), NOT NULL, UNIQUE
 - password: VARCHAR(50), NOT NULL
 - name: VARCHAR(100), NOT NULL
-- address: VARCHAR(100), NOT NULL
-- city: VARCHAR(50), NOT NULL
-- country: VARCHAR(50), NOT NULL
+- address: VARCHAR(255), NOT NULL
 - dob: DATE,
 - sex: VARCHAR(20), NOT NULL
 - email: VARCHAR(100), UNIQUE, NOT NULL
@@ -39,13 +37,11 @@
 - user_name: VARCHAR(50), NOT NULL, UNIQUE
 - password: VARCHAR(50), NOT NULL
 - name: VARCHAR(100), NOT NULL
-- address: VARCHAR(100), NOT NULL
-- city: VARCHAR(50), NOT NULL
-- country: VARCHAR(50), NOT NULL
+- address: VARCHAR(255), NOT NULL
 - email: VARCHAR(100), UNIQUE, NOT NULL
 - phone: VARCHAR(20), UNIQUE
-- specialization: VARCHAR(255)
-- working_hours: VARCHAR(255)
+- speciality: VARCHAR(50)
+- available_times: VARCHAR(255)
 - creation_at: TIMESTAMP, Default CURRENT_TIMESTAMP
 
 ### Table: admins
@@ -89,8 +85,8 @@
   "patientName": "VARCHAR()",
   "appointmentId": "INT",
   "medication": "VARCHAR()",
-  "dosage": "VARCHAR",
-  "doctorNotesID": "->",
+  "dosage": "VARCHAR(min = 3, max = 20)",
+  "doctorNotesID": "-> (max = 200)",
   "refillCount": "INT",
   "pharmacyID": "ObjectPharmacy"
 }
