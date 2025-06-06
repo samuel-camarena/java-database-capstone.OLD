@@ -24,8 +24,7 @@
 - id: INT, PRIMARY KEY, AUTO INCREMENT
 - user_name: VARCHAR(50), NOT NULL, UNIQUE
 - password: VARCHAR(50), NOT NULL
-- first_name: VARCHAR(50), NOT NULL
-- last_name: VARCHAR(50), NOT NULL
+- name: VARCHAR(100), NOT NULL
 - address: VARCHAR(100), NOT NULL
 - city: VARCHAR(50), NOT NULL
 - country: VARCHAR(50), NOT NULL
@@ -39,8 +38,7 @@
 - id: INT, PRIMARY KEY, AUTO INCREMENT
 - user_name: VARCHAR(50), NOT NULL, UNIQUE
 - password: VARCHAR(50), NOT NULL
-- first_name: VARCHAR(50), NOT NULL
-- last_name: VARCHAR(50), NOT NULL
+- name: VARCHAR(100), NOT NULL
 - address: VARCHAR(100), NOT NULL
 - city: VARCHAR(50), NOT NULL
 - country: VARCHAR(50), NOT NULL
@@ -54,8 +52,7 @@
 - id: INT, PRIMARY KEY, AUTO INCREMENT
 - user_name: VARCHAR(50), NOT NULL, UNIQUE
 - password: VARCHAR(50), NOT NULL
-- first_name: VARCHAR(50), NOT NULL 
-- last_name: VARCHAR(50), NOT NULL
+- name: VARCHAR(100), NOT NULL 
 - email: VARCHAR(100), UNIQUE, NOT NULL
 - phone: VARCHAR(20), NOT NULL, UNIQUE
 - creation_at: TIMESTAMP, Default CURRENT_TIMESTAMP
